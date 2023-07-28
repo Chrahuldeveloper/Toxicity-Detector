@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machine Learning</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity@1.2.2"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-500">
+    <div
+      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+    >
+      <div
+        class="bg-white shadow-2xl p-8 rounded-xl flex flex-col justify-center space-y-5"
+      >
+        <textarea
+          placeholder="Enter text"
+          cols="50"
+          rows="8"
+          id="Usertext"
+          class="outline-none border-[1px] p-3.5 border-gray-300"
+        ></textarea>
+        <button
+          id="btn"
+          class="bg-blue-500 px-10 py-1.5 rounded-lg font-semibold text-white"
+        >
+          Check
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
